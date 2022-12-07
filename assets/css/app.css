@@ -41,7 +41,6 @@ svg {
 }
 
 #hero h1 {
-  font-size: 2rem;
   color: var(--clr-brand);
   font-family: var(--ff-heading);
 }
