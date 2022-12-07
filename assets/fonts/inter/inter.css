@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./full/Inter-100.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./full/Inter-200.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./full/Inter-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./full/Inter-400.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./full/Inter-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./full/Inter-600.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./full/Inter-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./full/Inter-800.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./full/Inter-900.woff") format("woff");
+}

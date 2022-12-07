@@ -1,0 +1,31 @@
+/* FONTS */
+@import url(../fonts/inter/inter.css);
+@import url(../fonts/great-vibes/great-vibes.css);
+
+/* VARIABLES */
+:root {
+  --ff-body: "Inter", sans-serif;
+  --ff-heading: "Great Vibes", sans-serif;
+
+  --clr-body: rgba(13, 13, 13, 0.95);
+  --clr-brand: #ff9f0d;
+
+  --trandition: 0.4s all ease;
+}
+
+/* RESET */
+body {
+  color: white;
+  min-height: 1vh;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: var(--clr-body);
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+}
