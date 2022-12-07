@@ -18,7 +18,6 @@ body {
   color: white;
   min-height: 1vh;
   font-family: var(--ff-body);
-  font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
   background-color: var(--clr-body);
@@ -28,6 +27,30 @@ img,
 picture,
 svg {
   max-width: 100%;
+}
+
+/* Utility */
+
+.sectionPadding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sectionPaddingTop {
+  padding-top: 8rem;
+}
+
+.sectionPaddingBottom {
+  padding-bottom: 8rem;
+}
+
+.color-brand {
+  color: var(--clr-brand);
+}
+
+.txtSubtitle {
+  color: var(--clr-brand);
+  font-family: var(--ff-heading);
 }
 
 /* Hero */

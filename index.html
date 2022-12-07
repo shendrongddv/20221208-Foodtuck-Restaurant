@@ -8,10 +8,15 @@
     <!-- CSS -->
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!-- App -->
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll">
     <!-- Header -->
     <header>
       <!-- Navbar -->
@@ -51,7 +56,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#home">Home</a>
+                  <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#menu">Menu</a>
@@ -99,7 +104,9 @@
         <div class="row g-4 justify-content-between align-items-center">
           <div class="col-lg-6 text-center text-lg-start">
             <h1 class="h2 mt-2">Its Quick & Amusing!</h1>
-            <h2 class="display-3 fw-bold">The Art of speed food Quality</h2>
+            <h2 class="display-3 fw-bold">
+              <span class="color-brand">The </span>Art of speed food Quality
+            </h2>
             <p class="mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
               dolor fuga eum ipsa incidunt, sapiente nulla.
@@ -110,13 +117,208 @@
               >See Menu</a
             >
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-6">
             <img src="./assets/images/hero-img.png" alt="" />
           </div>
         </div>
       </div>
     </section>
     <!-- /Hero -->
+
+    <!-- About -->
+    <section id="about" class="sectionPadding">
+      <div class="container">
+        <div class="row g-4 justify-content-between align-items-center">
+          <!-- ##### -->
+          <div class="col-lg-5">
+            <span class="h2 txtSubtitle">About Us</span>
+            <h2 class="display-5 fw-bold mt-2 mb-4">
+              <span class="color-brand">We </span>
+              Create the best foody product
+            </h2>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              maxime amet dolores ducimus, iste temporibus. Minus?
+            </p>
+
+            <ul class="list-unstyled">
+              <li class="mb-1 d-flex gap-2">
+                <i class="color-brand fw-bold ri-check-fill"></i> Lacus nisi, et
+                ac dapibus sit eu velit in consequat.
+              </li>
+              <li class="mb-1 d-flex gap-2">
+                <i class="color-brand fw-bold ri-check-fill"></i>
+                Quisque diam pellentesque bibendum non dui volutpat fringilla
+              </li>
+              <li class="mb-1 d-flex gap-2">
+                <i class="color-brand fw-bold ri-check-fill"></i> Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit
+              </li>
+            </ul>
+
+            <a
+              href="#"
+              class="my-3 mb-lg-0 btn btn-warning rounded-pill shadow py-2 px-3"
+              >Read More</a
+            >
+          </div>
+
+          <!-- ##### -->
+          <div class="col-lg-6">
+            <div class="row g-2">
+              <div class="col-12">
+                <img
+                  src="./assets/images/about-1.jpg"
+                  class="rounded ratio-16x9"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="./assets/images/about-2.jpg"
+                  class="rounded ratio-16x9"
+                  alt=""
+                />
+              </div>
+              <div class="col-6">
+                <img
+                  src="./assets/images/about-3.jpg"
+                  class="rounded ratio-16x9"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About -->
+
+    <!-- Category -->
+    <section id="category" class="sectionPaddingBottom">
+      <div class="container">
+        <!-- ##### -->
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <span class="h2 txtSubtitle">Food Category</span>
+            <h2 class="display-5 fw-bold mt-2">
+              <span class="color-brand">Choose </span>Food Iteam
+            </h2>
+          </div>
+        </div>
+
+        <!-- ##### -->
+        <div class="row mt-3 g-2 g-lg-4">
+          <!-- Card -->
+          <div class="col-6 col-lg-3">
+            <img
+              src="./assets/images/category-1.jpg"
+              class="rounded shadow ratio-1x1"
+              alt=""
+            />
+          </div>
+          <!-- Card -->
+          <div class="col-6 col-lg-3">
+            <img
+              src="./assets/images/category-2.jpg"
+              class="rounded shadow ratio-1x1"
+              alt=""
+            />
+          </div>
+          <!-- Card -->
+          <div class="col-6 col-lg-3">
+            <img
+              src="./assets/images/category-3.jpg"
+              class="rounded shadow ratio-1x1"
+              alt=""
+            />
+          </div>
+          <!-- Card -->
+          <div class="col-6 col-lg-3">
+            <img
+              src="./assets/images/category-4.jpg"
+              class="rounded shadow ratio-1x1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Category -->
+
+    <!-- Why Us -->
+    <section id="whyUs" class="sectionPaddingBottom">
+      <div class="container">
+        <div class="row g-4 justify-content-between align-items-center">
+          <!-- ##### -->
+          <div class="col-lg-6 d-flex-col g-4">
+            <!-- ##### -->
+            <div class="row d-flex-col align-items-end g-2 mb-2">
+              <div class="col-7">
+                <img
+                  src="./assets/images/why-us-1.jpg"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="col-5">
+                <img
+                  src="./assets/images/why-us-2.jpg"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+            <!-- ##### -->
+            <div class="row d-flex-col align-items-start g-2">
+              <div class="col-5">
+                <img
+                  src="./assets/images/why-us-3.jpg"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="col-4">
+                <img
+                  src="./assets/images/why-us-4.jpg"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+              <div class="col-3">
+                <img
+                  src="./assets/images/why-us-5.jpg"
+                  class="mb-2 rounded"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/why-us-6.jpg"
+                  class="rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- ##### -->
+          <div class="col-lg-5">
+            <span class="h2 txtSubtitle">Why Choose us</span>
+            <h2 class="display-5 fw-bold mt-2 mb-4">
+              <span class="color-brand">Exta </span>ordinary taste And
+              Experienced
+            </h2>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              diam pellentesque bibendum non dui volutpat fringilla bibendum.
+              Urna, elit augue urna, vitae feugiat pretium donec id elementum.
+              Ultrices mattis sed vitae mus risus. Lacus nisi, et ac dapibus sit
+              eu velit in consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Why Us -->
     <!-- /Main -->
 
     <!-- Footer -->
