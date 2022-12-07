@@ -10,7 +10,7 @@
   --clr-body: rgba(13, 13, 13, 0.95);
   --clr-brand: #ff9f0d;
 
-  --trandition: 0.4s all ease;
+  --transition: 0.4s all ease;
 }
 
 /* RESET */
@@ -55,6 +55,15 @@ svg {
 .txtSubtitle {
   color: var(--clr-brand);
   font-family: var(--ff-heading);
+}
+
+.bg-base {
+  background-color: var(--clr-body);
+}
+
+/* Navbar */
+.navbar {
+  transition: var(--transition);
 }
 
 /* Hero */
@@ -104,4 +113,8 @@ svg {
   align-items: center;
   gap: 0.75rem;
   text-align: center;
+}
+
+.value__media {
+  width: 50% !important;
 }
