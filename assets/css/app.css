@@ -64,6 +64,14 @@ svg {
   background-color: var(--clr-body);
 }
 
+/* BTN */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 /* Navbar */
 .navbar {
   transition: var(--transition);
