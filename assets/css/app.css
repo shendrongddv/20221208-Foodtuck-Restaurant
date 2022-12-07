@@ -29,3 +29,19 @@ picture,
 svg {
   max-width: 100%;
 }
+
+/* Hero */
+#hero {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+  background: linear-gradient(rgba(13, 13, 13, 0.95), rgba(13, 13, 13, 0.95)),
+    url(../images/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  color: var(--clr-brand);
+  font-family: var(--ff-heading);
+}
