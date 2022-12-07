@@ -11,6 +11,9 @@
   --clr-brand: #ff9f0d;
 
   --transition: 0.4s all ease;
+
+  /* From Bootstrap */
+  /* --bs-gutter-x: 2rem; */
 }
 
 /* RESET */
