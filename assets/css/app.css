@@ -131,6 +131,7 @@ svg {
 }
 
 .value__card:hover {
+  border: 1px solid var(--clr-brand);
   background-color: var(--clr-body-light);
 }
 
