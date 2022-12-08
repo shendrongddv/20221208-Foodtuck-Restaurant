@@ -282,6 +282,7 @@ a:hover {
 .blog__media {
   overflow: hidden;
   aspect-ratio: 16 / 9;
+  transition: var(--transition);
 }
 
 .blog__media > img {
@@ -291,8 +292,16 @@ a:hover {
   transition: var(--transition);
 }
 
+.blog__card:hover {
+  background-color: var(--clr-body-light);
+}
+
+.blog__card:hover .blog__media {
+  margin: 1rem 1rem 0 1rem;
+}
+
 .blog__card:hover .blog__media > img {
-  transform: scale(1.125);
+  transform: scale(1.25) rotate(5deg);
 }
 
 .blog__content {
