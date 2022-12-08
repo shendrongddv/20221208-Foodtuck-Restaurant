@@ -35,6 +35,7 @@ svg {
 
 a {
   color: inherit;
+  text-decoration: none;
   transition: var(--transition);
 }
 
@@ -72,6 +73,10 @@ a:hover {
 
 .bg-base {
   background-color: var(--clr-body);
+}
+
+.bg-brand {
+  background-color: var(--clr-brand);
 }
 
 /* BTN */
@@ -341,4 +346,76 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+/* Footer */
+#footer ul > li {
+  margin-bottom: 0.5rem;
+}
+
+#footer ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.footerCard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footerMedia,
+.footerMediaSmall {
+  margin-top: 4px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-brand);
+  overflow: hidden;
+}
+
+.footerMedia {
+  height: 4rem;
+}
+
+.footerMediaSmall {
+  height: 3rem;
+}
+
+.footerMediaSmall > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.125);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContent > small {
+  opacity: 0.75;
+}
+
+.socialIcon {
+  height: 2rem;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcon > i {
+  color: var(--clr-body);
+  transition: var(--transition);
+}
+
+.socialIcon:hover > i {
+  color: var(--clr-brand);
+  transition: var(--transition);
 }
