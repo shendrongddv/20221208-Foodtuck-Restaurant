@@ -1,3 +1,9 @@
+// AOS
+AOS.init({
+  duration: 800,
+});
+
+// Shrink Navbar
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
