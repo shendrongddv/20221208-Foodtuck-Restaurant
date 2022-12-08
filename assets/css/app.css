@@ -33,6 +33,15 @@ svg {
   max-width: 100%;
 }
 
+a {
+  color: inherit;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--clr-brand);
+}
+
 /* Utility */
 
 .sectionPadding {
@@ -95,11 +104,17 @@ svg {
 
 /* About us */
 .about__media {
+  border: 1px solid var(--clr-brand);
   background-color: var(--clr-brand);
   display: grid;
   place-items: center;
   width: 100%;
   aspect-ratio: 1 / 1;
+  transition: var(--transition);
+}
+
+.about__media:hover {
+  background-color: transparent;
 }
 
 .about__experience {
@@ -240,4 +255,81 @@ svg {
   .review__content {
     padding: 3.5rem 1.25rem 1.25rem 1.25rem;
   }
+}
+
+/* CTA */
+#cta {
+  background: linear-gradient(rgba(13, 13, 13, 0.25), rgba(13, 13, 13, 0.65)),
+    url(../images/cta-bg.jpg) no-repeat center;
+  background-size: cover;
+  transition: var(--transition);
+}
+
+@media (max-width: 767.98px) {
+  #cta {
+    background-position: 40% 50%;
+  }
+}
+
+/* Blog */
+.blog__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.blog__media {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.blog__media > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.blog__card:hover .blog__media > img {
+  transform: scale(1.125);
+}
+
+.blog__content {
+  padding: 1rem;
+}
+
+.blog__content > small {
+  padding: 2px 4px;
+  background-color: var(--clr-brand);
+  color: var(--clr-body);
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 3px;
+}
+
+.blog__footer {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-bottom: 2rem;
+}
+
+.blog__social > i {
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.blog__social > i:hover {
+  color: var(--clr-brand);
+}
+
+.blog__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
