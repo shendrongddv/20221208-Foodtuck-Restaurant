@@ -301,7 +301,7 @@ a:hover {
 }
 
 .blog__card:hover .blog__media > img {
-  transform: scale(1.25) rotate(5deg);
+  transform: scale(1.125);
 }
 
 .blog__content {
