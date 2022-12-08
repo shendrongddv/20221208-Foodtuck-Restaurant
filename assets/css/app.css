@@ -8,7 +8,7 @@
   --ff-heading: "Great Vibes", sans-serif;
 
   --clr-body: rgba(13, 13, 13, 0.95);
-  --clr-body-dark: rgb(13, 13, 13);
+  --clr-body-light: rgba(13, 13, 13, 0.6);
   --clr-brand: #ff9f0d;
 
   --transition: 0.4s all ease;
@@ -120,6 +120,7 @@ svg {
 
 .value__card {
   height: 100%;
+  border: 1px solid transparent;
   padding: 1.25rem 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
@@ -130,9 +131,113 @@ svg {
 }
 
 .value__card:hover {
-  background-color: var(--clr-body-dark);
+  border: 1px solid var(--clr-brand);
+  background-color: var(--clr-body-light);
 }
 
 .value__media {
-  width: 25%;
+  width: 40%;
+}
+
+/* Chef */
+.chef__card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3 / 4;
+}
+
+.chef__card > img {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.chef__card:hover > img {
+  transform: scale(1.125);
+}
+
+.chef__info {
+  z-index: 1;
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  background-color: var(--clr-body);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chef__info span {
+  font-weight: 500;
+}
+
+.chef__info small {
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+@media (max-width: 767.98px) {
+  .chef__info small {
+    font-size: 12px;
+  }
+}
+
+/* Review */
+.review__card > img {
+  height: 8rem;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid var(--clr-brand);
+  margin-bottom: -4rem;
+  z-index: 2;
+}
+
+.review__content {
+  padding: 5.5rem 3.5rem 1.5rem 3.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--clr-body);
+  width: 100%;
+}
+
+.review__content > p {
+  opacity: 0.8;
+}
+
+.review__star {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--clr-brand);
+}
+
+.review__star > i:last-child {
+  color: grey;
+}
+
+.review__content > span {
+  font-weight: 500;
+}
+
+.review__content > small {
+  opacity: 0.8;
+}
+
+@media (max-width: 767.98px) {
+  .review__card > img {
+    height: 6rem;
+    margin-bottom: -3rem;
+  }
+  .review__content {
+    padding: 3.5rem 1.25rem 1.25rem 1.25rem;
+  }
 }
