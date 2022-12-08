@@ -4,7 +4,8 @@
 
 /* VARIABLES */
 :root {
-  --ff-body: "Inter", sans-serif;
+  /* --ff-body: "Inter", sans-serif; */
+  --ff-body: "Helvetica", sans-serif;
   --ff-heading: "Great Vibes", sans-serif;
 
   --clr-body: rgba(13, 13, 13, 0.95);
@@ -80,16 +81,62 @@ a:hover {
 }
 
 /* BTN */
-.btn {
+/* .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-}
+} */
 
 /* Navbar */
 .navbar {
   transition: var(--transition);
+}
+
+#navForm {
+  padding: 2px;
+}
+
+#navForm .btn-warning {
+  border: 2px solid white;
+}
+
+#navForm .form-control {
+  border: none;
+}
+
+#navForm .form-control:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  padding: 0.5rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: white;
+  background-color: var(--clr-brand);
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+  padding: 0.5rem 5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+  background-color: var(--clr-brand);
 }
 
 /* Hero */

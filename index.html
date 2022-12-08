@@ -28,12 +28,14 @@
     <header>
       <!-- Navbar -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top py-4 border-bottom"
+        class="navbar navbar-expand-lg d-flex align-items-center py-2 py-lg-4 navbar-dark fixed-top"
       >
         <div class="container">
           <a class="navbar-brand" href="/">
             <img src="./assets/images/brand.svg" alt="" />
           </a>
+
+          <!-- Toggle Open -->
           <button
             class="navbar-toggler"
             type="button"
@@ -41,58 +43,70 @@
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="ri-menu-unfold-line"></i>
           </button>
+          <!-- /Toggle Open -->
+
           <div
-            class="offcanvas offcanvas-end bg-dark"
+            class="offcanvas offcanvas-end bg-dark w-75"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header py-2">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <img src="./assets/images/brand.svg" alt="" />
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                class="navbar-toggler"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+                <i class="ri-close-line"></i>
+              </button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="#hero">Home</a>
+                  <a class="nav-link rounded" href="#hero">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#category">Menu</a>
+                  <a class="nav-link rounded" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#blog">Blog</a>
+                  <a class="nav-link rounded" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#pages">Pages</a>
+                  <a class="nav-link rounded" href="#whyUs">Why Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link rounded" href="#chef">Chef</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#shop">Shop</a>
+                  <a class="nav-link rounded" href="#review">Review</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
+                  <a class="nav-link rounded" href="#blog">Blog</a>
                 </li>
               </ul>
-              <form class="d-flex mt-3 mt-lg-0" role="search">
+              <form
+                id="navForm"
+                class="d-flex mt-3 mt-lg-0 rounded-pill bg-white ms-lg-5"
+                role="search"
+              >
                 <input
-                  class="form-control me-2"
+                  class="form-control rounded-pill"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
+                <button
+                  class="btn btn-warning rounded-circle shadow"
+                  type="submit"
+                >
+                  <i class="ri-search-2-line"></i>
                 </button>
               </form>
             </div>
@@ -233,7 +247,7 @@
     <!-- /About -->
 
     <!-- Category -->
-    <section id="category" class="sectionPadding">
+    <section id="menu" class="sectionPadding">
       <div class="container">
         <!-- ##### -->
         <div class="row">
@@ -766,6 +780,46 @@
     <!-- Footer -->
     <footer id="footer" class="border-top">
       <!-- ##### -->
+      <div class="footerTop">
+        <div class="container">
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-lg-7 text-center text-lg-start">
+              <h2
+                class="display-5 fw-bold mt-2 mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <span class="color-brand">Still </span>You Need Our Support ?
+              </h2>
+              <p class="" data-aos="fade-up" data-aos-delay="200">
+                Don't wait make a smart & logical quote here. Its pretty easy.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <form
+                id="navForm"
+                class="d-flex mt-3 mt-lg-0 rounded-pill bg-white ms-lg-5"
+                role="search"
+              >
+                <input
+                  class="form-control rounded-pill"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-warning rounded-pill shadow"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ##### -->
       <div class="footerMain">
         <div class="container sectionPadding">
           <div class="row g-4 justify-content-between">
@@ -819,8 +873,7 @@
                 <div class="footerContent">
                   <small>20 Feb 2022</small>
                   <span class="fw-semibold"
-                    >Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit.</span
+                    >Lorem ipsum dolor sit amet, adipisicing elit.</span
                   >
                 </div>
               </div>
@@ -832,8 +885,8 @@
                 <div class="footerContent">
                   <small>20 Feb 2022</small>
                   <span class="fw-semibold"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit aperiam inventore ut.</span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.</span
                   >
                 </div>
               </div>
@@ -845,8 +898,7 @@
                 <div class="footerContent">
                   <small>20 Feb 2022</small>
                   <span class="fw-semibold"
-                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Animi, iure.</span
+                    >Lorem ipsum dolor sit amet, consectetur.</span
                   >
                 </div>
               </div>
